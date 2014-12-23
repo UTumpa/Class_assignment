@@ -8,9 +8,9 @@ $link = mysqli_connect("localhost",
                         "lict@2",
                         "students");
 
-$query = "INSERT INTO `students`.`users` (
+$query = "INSERT INTO `students`.`users` ('Id',
 `first_name` ,
-`last_name`
+`last_name`,'phone_number'
 )
 VALUES (
     '$firstName', '$lastName'
